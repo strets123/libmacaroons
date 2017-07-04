@@ -95,6 +95,9 @@ This will install macaroons onto your system and give you both the C and Python
 interfaces to libmacaroons.  In the rest of this document, we'll show examples
 using the Python interface, but the code could easily be translated into C.
 
+Alternatively it is possible to install macaroons as a python module using pip.
+    pip install -e git@github.com:strets123/libmacaroons.git#egg=master
+
 Creating Your First Macaroon
 ----------------------------
 
