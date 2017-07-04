@@ -44,8 +44,6 @@
 #include <bsd/libutil.h>
 #elif defined HAVE_OSX_LIBUTIL_H
 #include <util.h>
-#else
-#error portability problem
 #endif
 
 /* macaroons */
@@ -554,7 +552,7 @@ macaroon_prepare_for_request(const struct macaroon* M,
 #pragma GCC diagnostic pop
 
 MACAROON_API struct macaroon_verifier*
-macaroon_verifier_create()
+macaroon_verifier_create(void)
 {
     struct macaroon_verifier* V;
     V = malloc(sizeof(struct macaroon_verifier));
